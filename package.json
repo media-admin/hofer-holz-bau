@@ -8,6 +8,7 @@
   },
   "author": "Markus Tritremmel | markus.tritremmel@media-lab.at",
   "dependencies": {
+    "bulma": "^0.9.3",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1"
   },
