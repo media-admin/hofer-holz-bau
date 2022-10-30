@@ -56,7 +56,6 @@ dwsync.xml
 # -- WORDPRESS PART --
 # ignore everything in the root except the "wp-content" directory.
 backups/
-backups/
 wp-admin/
 wp-includes/
 LICENSE
@@ -69,3 +68,5 @@ readme.html
 
 # ignore these plugins - please expand the list
 wp-content/plugins/index.php
+
+!app/assets/*
