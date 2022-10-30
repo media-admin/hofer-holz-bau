@@ -1,3 +1,21 @@
+# -- STATIC PART --
+
+# ignore node dependency directories
+node_modules/
+
+# ignore nova directory
+.nova/
+
+# ignore every DS_Store File on any location
+*.DS_Store
+*/*.DS_Store
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+
 # Numerous always-ignore extensions
 *.diff
 *.err
@@ -11,6 +29,7 @@
 *.sass-cache
 node_modules/
 .tmp/
+
 
 # OS or Editor folders
 .DS_Store
@@ -28,3 +47,25 @@ nbproject
 .komodotools
 _notes
 dwsync.xml
+
+
+# ignore SSL validation directory.
+.well-known/
+
+
+# -- WORDPRESS PART --
+# ignore everything in the root except the "wp-content" directory.
+backups/
+backups/
+wp-admin/
+wp-includes/
+LICENSE
+README.md
+license.txt
+liesmich.html
+readme.html
+/*.php
+!wp-content/
+
+# ignore these plugins - please expand the list
+wp-content/plugins/index.php
