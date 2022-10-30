@@ -14,16 +14,14 @@ const postCSSPlugins = [
 	require('autoprefixer')
 ]
 
+
 class RunAfterCompile {
 	apply(compiler) {
-		compiler.hooks.done.tap('Copy image files', function() {
+		compiler.hooks.done.tap('Copy images', function() {
 			fse.copySync('./app/assets/images', './dist/assets/images')
 		})
-		compiler.hooks.done.tap('Copy font files', function() {
-			fse.copySync('./app/assets/fonts', './dist/assets/fonts')
-		})
 		compiler.hooks.done.tap('Copy vendor files', function() {
-			fse.copySync('./app/vendor', './dist/vendor')
+			fse.copySync('./app/vendor', './dist/assets/vendor')
 		})
 	}
 }
