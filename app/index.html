@@ -1,16 +1,672 @@
 <!DOCTYPE html>
-<html lang='de'>
+<html class="outer-html" lang='de'>
 	<head>
-		<title>Static Template by Media Lab</title>
+		<title>LocalDev - Home - Hofer-Holz-Bau Ges.m.b.H.</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=no">
 		<link href="" rel="stylesheet">
+
+		<!-- === FAVICONS === -->
+
+		<!-- Default -->
+		<link rel="icon" href="assets/images/favicon/favicon.svg" type="image/x-icon">
+		<link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- PNG icons with different sizes -->
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-194x194.png" sizes="194x194">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+
+		<!-- Apple Touch Icons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon-180x180.png">
+		<link rel="apple-touch-icon" sizes="192x192" href="assets/images/favicon/apple-touch-icon-192x192.png">
+
+		<!-- Apple macOS Safari Mask Icon -->
+		<link rel="mask-icon" href="assets/images/favicon/favicon.svg" color="#6F7070">
+
+		<!-- Apple iOS Safari Theme -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#6F7070">
+		<meta name="apple-mobile-web-app-title" content="Hofer-Holz-Bau Ges.m.b.H. - Wir machen Holz zum Thema">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<!-- Microsoft Windows Tiles -->
+		<meta name="theme-color" content="#8DC21C">
+		<meta name="msapplication-navbutton-color" content="#6F7070">
+		<meta name="msapplication-TileColor" content="#F5FBEF">
+		<meta name="msapplication-TileImage" content="assets/images/favicon/windows-tile-icon-144x144.png">
+		<meta name="application-name" content="Hofer-Holz-Bau Ges.m.b.H. - Wir machen Holz zum Thema">
+
+		<!-- Internet Explorer 11 Tiles -->
+		<meta name="msapplication-square70x70logo" content="assets/images/favicon/ms-ie11-icon-70x70.png">
+		<meta name="msapplication-square150x150logo" content="assets/images/favicon/ms-ie11-icon-150x150.png">
+		<meta name="msapplication-wide310x150logo" content="assets/images/favicon/ms-ie11-icon-310x150.png">
+		<meta name="msapplication-square310x310logo" content="assets/images/favicon/ms-ie11-icon-310x310.png">
+
+		<!-- Open Graph -->
+		<meta property="og:title" content="Hofer-Holz-Bau Ges.m.b.H. - Wir machen Holz zum Thema">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.hoferholzbau.at">
+		<meta property="og:image" content="og_image_url">
+		<meta property="og:site_name" content="Hofer-Holz-Bau Ges.m.b.H. - Wir machen Holz zum Thema">
+		<meta property="og:locale" content="de_AT">
+
+		<!-- Slick Slider
+		<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+		-->
+
 	</head>
-	<body>
-		<h1>Hey, there...</h1>
-		<p>This is the Static Template by Media Lab Tritremmel GmbH - Yeah</p>
-		<div class="large-hero wrapper">
-			<h2>This is really awesome - you know</h2>
-		</div>
-	</body>
+
+	<body class="site-body home">
+
+		<header class="site-header">
+			<div class="site-header__branding">
+				<div class="site-header__logo">
+					<a class="site-header-logo__link wrapper" href="index.html">
+						<img class="site-header__logo-img" src="assets/images/Logo-4c-positiv.svg" alt="Logo Hofer-Holz-Bau Ges.m.b.H. - Wir machen Holz zum Thema">
+					</a>
+				</div>
+				<div class="site-header__holzbaumeister">
+					<img class="site-header__holzbaumeister-img" src="assets/images/Baumeister-Logo.svg" alt="Logo Holzbaumeister">
+				</div>
+
+				<div class="site-header__navi-contact-area">
+					<div class="site-header__navi-contact-information">
+						<div class="site-header__navi-contact-information-phone">
+							<img class="site-header__navi-contact-information-phone-icon" src="assets/icons/icon_phone.svg"/>
+							<span class="site-header__navi-contact-information-phone-callout">Jetzt anrufen</span>
+							<a class="site-header__navi-contact-information-phone-number" href="tel:+43 2620 22210">+43 2620 22 21-0</a>
+						</div>
+						<div class="site-header__navi-contact-information-mail">
+							<img class="site-header__navi-contact-information-mail-icon" src="assets/icons/icon_mail.svg"/>
+							<span class="site-header__navi-contact-information-mail-callout">E-Mail schreiben</span>
+							<a class="site-header__navi-contact-information-mail-address" href="mailto:info@hoferholzbau.at">info@hoferholzbau.at</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Hamburger Menu Toggle -->
+			<nav class="main-navigation">
+
+				<menu class="site-menu">
+					<div class="burger-menu">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<div class="burger-menu-caption">Menü</div>
+					</div>
+				</menu>
+
+				<script>
+					var navigation = document.querySelector(".main-navigation");
+					var hamburger = document.querySelector(".burger-menu");
+
+						navigation.onclick = function () {
+						this.classList.toggle ("is-active");
+					}
+
+					hamburger.onclick = function () {
+						this.classList.toggle ("checked");
+					}
+				</script>
+
+				<div class="navbar">
+					<ul class="navbar__navigation-list">
+						<li class="navbar-item"><a href="#">Produkte</a></li>
+						<li class="navbar-item"><a href="#">Leistungen</a></li>
+						<li class="navbar-item"><a href="#">Projekte</a></li>
+						<li class="navbar-item"><a href="#">Projektablauf</a></li>
+						<li class="navbar-item"><a href="#">Häufige Fragen</a></li>
+						<li class="navbar-item"><a href="#">Firma</a></li>
+						<li class="navbar-item"><a href="#">Offene Stellen</a></li>
+						<li class="navbar-item"><a href="#">Zulieferer</a></li>
+					</ul>
+				</div>
+
+			</nav>
+
+				<div class="site-header__navi-additional-area">
+					<div class="site-header__navi-additional-area-phone">
+						<img class="site-header__navi-additional-area-phone-icon" src="assets/icons/icon_phone.svg"/>
+						<span class="site-header__navi-additional-area-phone-callout">Jetzt anrufen</span>
+						<a class="site-header__navi-additional-area-phone-number" href="tel:+43 2620 22210">+43 2620 22 21-0</a>
+					</div>
+					<div class="site-header__navi-additional-area-mail">
+						<img class="site-header__navi-additional-area-mail-icon" src="assets/icons/icon_mail.svg"/>
+						<span class="site-header__navi-additional-area-mail-callout">E-Mail schreiben</span>
+						<a class="site-header__navi-additional-area-mail-address" href="mailto:info@hoferholzbau.at">info@hoferholzbau.at</a>
+					</div>
+				</div>
+
+		</header>
+
+			<main class="site-main wrapper">
+				<div class="site-content">
+					<!-- <h1 class="site-title">Startseite</h1> -->
+
+					<section id="featured-posts" class="featured-posts section-container" data-matching-link="#featured-posts-link">
+						<h2 class="featured-posts__headline h2__section-headline"><span>Featured Products<span></h2>
+
+
+						<div class="featured-posts__container">
+
+							<article class="featured-posts__card card">
+								<div class="card__container wrapper">
+									<p class="featured-posts__pretitle card__pretitle">iMac 24“</p>
+									<h3 class="featured-posts__title featured-posts__title card__title">Jetzt neu: mit M1 Chip</h3>
+									<p class="featured-posts__subtitle card__subtitle">ab sofort erhältlich</p>
+									<div class='dotted card__line--dotted'></div>
+									<img class="featured-posts__thumbnail card__thumbnail" src="assets/images/homepage/iMac_24-in_M1_chip_Hero_Horizontal_Print__USEN.png" alt="Icon Suchen">
+									<div class="featured-posts__content card__content">
+										<p>
+											Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. „Fix, Schwyz!“ quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.
+										</p>
+										<a class="btn btn--gray featured-posts__button card__button" role="button">Zum Konfigurator</a>
+									</div>
+								</div>
+							</article>
+
+							<article class="featured-posts__card card">
+								<div class="card__container wrapper">
+									<p class="featured-posts__pretitle card__pretitle">iPhone 13 Pro</p>
+									<h3 class="featured-posts__title featured-posts__title card__title">Aktuelles Update</h3>
+									<p class="featured-posts__subtitle card__subtitle">jetzt wieder in folgenden Farben verfügbar</p>
+									<div class='dotted card__line--dotted'></div>
+									<img class="featured-posts__thumbnail card__thumbnail" src="assets/images/homepage/iPhone_13_Pro_Lineup_Print__GBEN.png" alt="Icon Suchen">
+									<div class="featured-posts__content card__content">
+										<p>
+											Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. „Fix, Schwyz!“ quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.
+										</p>
+										<a class="btn btn--gray featured-posts__button card__button" role="button">Zur Farbauswahl</a>
+									</div>
+								</div>
+							</article>
+
+							<article class="featured-posts__card card">
+								<div class="card__container wrapper">
+									<p class="featured-posts__pretitle card__pretitle">MacBook Pro</p>
+									<h3 class="featured-posts__title featured-posts__title card__title">Das erste MacBook mit M1-Chip</h3>
+									<p class="featured-posts__subtitle card__subtitle">Gerade präsentiert, schon nächste Woche bei uns lieferbar</p>
+									<div class='dotted card__line--dotted'></div>
+									<img class="featured-posts__thumbnail card__thumbnail" src="assets/images/homepage/MacBook_Pro_16-in_Space_Gray_MacBook_Pro_16-in_Silver_Hero_Print__USEN.png" alt="Icon Suchen">
+									<div class="featured-posts__content card__content">
+										<p>
+											Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. „Fix, Schwyz!“ quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.
+										</p>
+										<a class="btn btn--gray featured-posts__button card__button" role="button">Modelle vergleichen</a>
+									</div>
+								</div>
+							</article>
+
+							<article class="featured-posts__card card">
+								<div class="card__container wrapper">
+									<p class="featured-posts__pretitle card__pretitle">HomePod mini</p>
+									<h3 class="featured-posts__title featured-posts__title card__title">Ab sofort auch in bunt</h3>
+									<p class="featured-posts__subtitle card__subtitle">Das Warten hat ein Ende</p>
+									<div class='dotted card__line--dotted'></div>
+									<img class="featured-posts__thumbnail card__thumbnail" src="assets/images/homepage/HomePod_mini_White_Blue_Orange_Yellow_Space_Gray_Hero_5-up_Print__USEN.png" alt="Icon Suchen">
+									<div class="featured-posts__content card__content">
+										<p>
+											Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. „Fix, Schwyz!“ quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.
+										</p>
+										<a class="btn btn--gray featured-posts__button card__button" role="button">Zur Modell-Übersicht</a>
+									</div>
+								</div>
+							</article>
+
+						</div>
+
+					</section>
+
+
+					<section id="news-posts" class="news-posts section-container container--white wrapper" data-matching-link="#news-posts-link">
+						<h2 class="news-posts__headline h2__section-headline"><span>News<span></h2>
+
+						<div class="news-posts__container">
+
+							<article class="news-posts__card card">
+								<div class="card__container wrapper">
+									<p class="news-posts__pretitle card__pretitle">Neues Service</p>
+									<h3 class="news-posts__title featured-posts__title card__title">Die Live-Beratung</h3>
+									<p class="news-posts__subtitle card__subtitle">mac)office Know How gibt es jetzt komplett „remote“</p>
+									<div class='line--dotted card__line--dotted'></div>
+									<img class="featured-posts__thumbnail card__thumbnail" src="assets/images/homepage/HomePod_mini_White_Blue_Orange_Yellow_Space_Gray_Hero_5-up_Print__USEN.png" alt="Icon Suchen">
+									<div class="news-posts__content card__content">
+										<p>
+											Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. „Fix, Schwyz!“ quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.
+										</p>
+										<a class="btn btn--gray news-posts__button card__button" role="button">Live-Beratung starten</a>
+									</div>
+								</div>
+							</article>
+
+							<article class="news-posts__card card">
+								<div class="card__container wrapper">
+									<p class="news-posts__pretitle card__pretitle">Angebot</p>
+									<h3 class="news-posts__title featured-posts__title card__title">Speziell für Business-Kunden</h3>
+									<p class="news-posts__subtitle card__subtitle">Finanzierungs-Option ab EUR 5.000,- Warenwert (netto)</p>
+									<div class='dotted card__line--dotted'></div>
+									<img class="featured-posts__thumbnail card__thumbnail" src="assets/images/homepage/iPhone_13_Pro_Lineup_Print__GBEN.png" alt="Icon Suchen">
+									<div class="news-posts__content card__content">
+										<p>
+											Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. „Fix, Schwyz!“ quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.
+										</p>
+										<a class="btn btn--gray news-posts__button card__button" role="button">Rückruf vereinbaren</a>
+									</div>
+								</div>
+							</article>
+
+						</div>
+
+					</section>
+
+					<section id="product-categories" class="product-categories section-container wrapper" data-matching-link="#product-categories-link">
+						<h2 class="product-categories__headline h2__section-headline"><span>Produktfamilien<span></h2>
+
+						<div class="product-categories__container">
+
+							<div class="product-categories__card card">
+								<a class="product-categories__link" href="https://www.apple.com/at/mac/" target="_blank">
+									<div class="card__container wrapper">
+										<img class="product-categories__img" src="assets/images/product-categories/product-category_mac@2x_web.png"/>
+										<div class="product-categories__content card__content">
+											<h4  class="product-categories__title card__title">Mac</h4>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="product-categories__card card">
+								<a class="product-categories__link" href="https://www.apple.com/at/iphone/" target="_blank">
+									<div class="card__container wrapper">
+										<img class="product-categories__img--full" src="assets/images/product-categories/product-category_iphone@2x_web.png"/>
+										<div class="product-categories__content card__content">
+											<h4  class="product-categories__title card__title">iPhone</h4>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="product-categories__card card">
+								<a class="product-categories__link" href="https://www.apple.com/at/ipad/" target="_blank">
+									<div class="card__container wrapper">
+										<img class="product-categories__img--full" src="assets/images/product-categories/product-category_ipad@2x_web.png"/>
+										<div class="product-categories__content card__content">
+											<h4  class="product-categories__title card__title">iPad</h4>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="product-categories__card card">
+								<a class="product-categories__link" href="https://www.apple.com/at/watch/" target="_blank">
+									<div class="card__container wrapper">
+										<img class="product-categories__img--full" src="assets/images/product-categories/product-category_watch@2x_web.png"/>
+										<div class="product-categories__content card__content">
+											<h4  class="product-categories__title card__title">Apple Watch</h4>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="product-categories__card card">
+								<a class="product-categories__link" href="https://www.apple.com/at/airpods/" target="_blank">
+									<div class="card__container wrapper">
+										<img class="product-categories__img--full" src="assets/images/product-categories/product-category_airpods@2x_web.png"/>
+										<div class="product-categories__content card__content">
+											<h4  class="product-categories__title card__title">AirPods</h4>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="product-categories__card card">
+								<a class="product-categories__link" href="https://www.apple.com/at/airtag/" target="_blank">
+									<div class="card__container wrapper">
+										<img class="product-categories__img--full" src="assets/images/product-categories/product-category_airtag@2x_web.png"/>
+										<div class="product-categories__content card__content">
+											<h4  class="product-categories__title card__title">AirTag</h4>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="product-categories__card card">
+								<a class="product-categories__link" href="https://www.apple.com/at/apple-tv-4k/" target="_blank">
+									<div class="card__container wrapper">
+										<img class="product-categories__img--full" src="assets/images/product-categories/product-category_appletv@2x_web.png"/>
+										<div class="product-categories__content card__content">
+											<h4  class="product-categories__title card__title">Apple TV</h4>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="product-categories__card card">
+								<a class="product-categories__link" href="https://www.apple.com/at/homepod-mini/" target="_blank">
+									<div class="card__container wrapper">
+										<img class="product-categories__img--full" src="assets/images/product-categories/product-category_homepod-mini@2x_web.png"/>
+										<div class="product-categories__content card__content">
+											<h4  class="product-categories__title card__title">HomePod mini</h4>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="product-categories__card card">
+								<a class="product-categories__link" href="https://www.apple.com/at/shop/accessories/all" target="_blank">
+									<div class="card__container wrapper">
+										<img class="product-categories__img--full" src="assets/images/product-categories/product-category_accessories@2x_web.png"/>
+										<div class="product-categories__content card__content">
+											<h4  class="product-categories__title card__title">Zubehör</h4>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="product-categories__card card">
+								<a class="product-categories__link" href="https://www.apple.com/at/shop/gift-cards" target="_blank">
+									<div class="card__container wrapper">
+										<img class="product-categories__img--full" src="assets/images/product-categories/product-category_apple-gift-cards@2x_web.png"/>
+										<div class="product-categories__content card__content">
+											<h4  class="product-categories__title card__title">Apple Gift Card</h4>
+										</div>
+									</div>
+								</a>
+							</div>
+
+						</div>
+
+					</section>
+
+
+					<section id="services" class="services section-container container--black wrapper" data-matching-link="#services-link">
+						<h2 class="services__headline h2__section-headline"><span>Leistungen<span></h2>
+
+						<div class="services__container">
+
+						<p class="services__intro intro__wrapper intro">
+							Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. „Fix, Schwyz!“ quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.
+						</p>
+
+							<article class="services__card card">
+								<div class="services__card-container card__container">
+									<a class="services__link" href="#" target="_blank">
+										<p class="services__pretitle card__pretitle">Vor Ort oder Remote</p>
+										<h3 class="services__title card__title">Beratung & Consulting</h3>
+										<div class="services__content card__content">
+											<img class="services__thumbnail--full services__thumbnail card__thumbnail" src="assets/images/homepage/img_beratung-und-consulting@0.5x_web.png" alt="">
+										</div>
+									</a>
+								</div>
+							</article>
+
+							<article class="services__card card">
+								<div class="services__card-container card__container">
+									<a class="services__link" href="#" target="_blank">
+										<p class="services__pretitle card__pretitle">5 Tage die Woche</p>
+										<h3 class="services__title card__title">Service & Support</h3>
+										<div class="services__content card__content">
+											<img class="services__thumbnail--full services__thumbnail card__thumbnail" src="assets/images/homepage/img_service-und-support@0.5x_web.png" alt="Alt Text">
+										</div>
+									</a>
+								</div>
+							</article>
+
+							<article class="services__card card">
+								<div class="services__card-container card__container">
+									<a class="services__link" href="#" target="_blank">
+										<p class="services__pretitle card__pretitle">Wir wickeln für Sie ab</p>
+										<h3 class="services__title card__title">Reparatur & Garantie</h3>
+											<div class="services__content card__content">
+												<img class="services__thumbnail--full services__thumbnail card__thumbnail" src="assets/images/homepage/img_reparatur-und-garantie@0.5x_web.png" alt="Alt Text">
+										</div>
+									</a>
+								</div>
+							</article>
+
+							<article class="services__card card">
+								<div class="services__card-container card__container">
+									<a class="services__link" href="/finanzierung">
+										<p class="services__pretitle card__pretitle">Mit einem starken Partner</p>
+										<h3 class="services__title card__title">Finanzierung</h3>
+										<div class="services__content card__content">
+											<img class="services__thumbnail--full services__thumbnail card__thumbnail" src="assets/images/homepage/img_finanzierung@0.5x_web.png" alt="Alt Text">
+										</div>
+									</a>
+								</div>
+							</article>
+
+						</div>
+
+					</section>
+
+					<section id="faq" class="faq section-container wrapper" data-matching-link="#faq-link">
+						<h2 class="faq__headline h2__section-headline"><span>Fragen & Antworten<span></h2>
+
+						<p class="faq__intro intro">
+							Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. „Fix, Schwyz!“ quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.
+						</p>
+
+						<div class="faq__container">
+
+							<div class="faq__accordion accordion">
+								<div class="faq__accordion-item accordion-item">
+									<button id="" aria-expanded="false"><span class="faq__accordion-title accordion-title">Mein iPhone ist so unglaublich schnell. Ist das normal?</span><span class="icon" aria-hidden="true"></span></button>
+									<div class="faq__accordion-content accordion-content">
+										<p>Anders als Geräte von Mitbewerbern funktioniert das dir vorliegende tatsächlich – und das in einer atemberaubenden Geschwindigkeit 🙂</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="faq__accordion accordion">
+								<div class="faq__accordion-item accordion-item">
+									<button id="" aria-expanded="false"><span class="faq__accordion-title accordion-title">Muss ich jemals wieder vor einen Microsoft-Computer?</span><span class="icon" aria-hidden="true"></span></button>
+									<div class="faq__accordion-content accordion-content">
+										<p>Anders als Geräte von Mitbewerbern funktioniert das dir vorliegende tatsächlich – und das in einer atemberaubenden Geschwindigkeit 🙂</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="faq__accordion accordion">
+								<div class="faq__accordion-item accordion-item">
+									<button id="" aria-expanded="false"><span class="faq__accordion-title accordion-title">Mein iPhone ist so unglaublich schnell. Ist das normal?</span><span class="icon" aria-hidden="true"></span></button>
+									<div class="faq__accordion-content accordion-content">
+										<p>Anders als Geräte von Mitbewerbern funktioniert das dir vorliegende tatsächlich – und das in einer atemberaubenden Geschwindigkeit 🙂</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="faq__accordion accordion">
+								<div class="faq__accordion-item accordion-item">
+									<button id="" aria-expanded="false"><span class="faq__accordion-title accordion-title">Muss ich jemals wieder vor einen Microsoft-Computer?</span><span class="icon" aria-hidden="true"></span></button>
+									<div class="faq__accordion-content accordion-content">
+										<p>Anders als Geräte von Mitbewerbern funktioniert das dir vorliegende tatsächlich – und das in einer atemberaubenden Geschwindigkeit 🙂</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="faq__accordion accordion">
+								<div class="faq__accordion-item accordion-item">
+									<button id="" aria-expanded="false"><span class="faq__accordion-title accordion-title">Mein iPhone ist so unglaublich schnell. Ist das normal?</span><span class="icon" aria-hidden="true"></span></button>
+									<div class="faq__accordion-content accordion-content">
+										<p>Anders als Geräte von Mitbewerbern funktioniert das dir vorliegende tatsächlich – und das in einer atemberaubenden Geschwindigkeit 🙂</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="faq__accordion accordion">
+								<div class="faq__accordion-item accordion-item">
+									<button id="" aria-expanded="false"><span class="faq__accordion-title accordion-title">Muss ich jemals wieder vor einen Microsoft-Computer?</span><span class="icon" aria-hidden="true"></span></button>
+									<div class="faq__accordion-content accordion-content">
+										<p>Anders als Geräte von Mitbewerbern funktioniert das dir vorliegende tatsächlich – und das in einer atemberaubenden Geschwindigkeit 🙂</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</section>
+
+
+
+					<section id="about-us" class="about-us section-container wrapper" data-matching-link="#faq-link">
+						<h2 class="about-us__headline h2__section-headline"><span>Über uns<span></h2>
+
+						<div class="about-us__container">
+
+						</div>
+
+					</section>
+
+
+
+
+
+
+
+
+
+				</div>
+			</main>
+
+			<footer class="site-footer">
+				<div class="site-footer__container--gray">
+					<nav class="site-footer__navigation">
+						<ul class="site-footer__navigation-list">
+							<li class="site-footer__navigation-list-item"><a class="" href="#">Datenschutz</a></li>
+							<li class="site-footer__navigation-list-item"><a class="" href="#">Impressum</a></li>
+							<li class="site-footer__navigation-list-item"><a class="site-footer__link-teamviewer btn--gray" href="#">TeamViewer</a></li>
+							<li class="site-footer__navigation-list-item"><a class="" href="#">AGBs (gewerblich)</a></li>
+							<li class="site-footer__navigation-list-item"><a class="" href="#">AGBs (privat)</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="site-footer__container--black">
+					<div class="site-footer__branding">
+						<div class="site-footer__logo">
+							<a class="site-footer__logo-link wrapper" href="index.html">
+								<picture>
+									<source srcset="assets/images/logos/macoffice_footer-logo-dark_smartphone.svg" media="(prefers-color-scheme: dark)">
+									<img class="site-footer__logo-img" src="assets/images/logos/macoffice_footer-logo-light_smartphone.svg" alt="Logo mac)office - Ihr autorisierter Apple-Händler in Wiener Neustadt">
+								</picture>
+							</a>
+						</div>
+						<div class="site-footer__apple-haendler">
+							<picture>
+								<source srcset="assets/images/logos/apple-haendler_footer-logo-light_smartphone.svg" media="(prefers-color-scheme: dark)">
+								<img class="site-footer__apple-haendler-img" src="assets/images/logos/apple-haendler_footer-logo-light_smartphone.svg" alt="Logo Autorisierter Händler">
+							</picture>
+						</div>
+					</div>
+
+					<div class="site-footer__contact">
+						<div class="site-footer__contact-address">
+							<img  class="site-footer__contact-address-icon" src="assets/images/icons/icon_address-footer_desktop.svg"/>
+							<p class="site-footer__contact-address-title">Adresse</p>
+							<p class="site-footer__contact-address-data">Fischauer Gasse 150<br/>2700 Wiener Neustadt<br/>Österreich</p>
+						</div>
+
+						<div class="site-footer__contact-information">
+							<div class="site-footer__contact-information-phone">
+								<img class="site-footer__contact-information-phone-icon" src="assets/images/icons/icon_phone-footer_desktop.svg"/>
+								<a class="site-footer__contact-information-phone-number" href="tel:+43 2622 85 270">+43 2622 85 270</a>
+							</div>
+							<div class="site-footer__contact-information-mail">
+								<picture>
+								<img class="site-footer__contact-information-mail-icon" src="assets/images/icons/icon_mail-footer_desktop.svg"/>
+								<a class="site-footer__contact-information-mail-address" href="mailto:info@macoffice.at">info@macoffice.at</a>
+							</div>
+							<div class="site-footer__contact-information-hotline">
+								<img class="site-footer__contact-information-hotline-icon" src="assets/images/icons/icon_call-footer_desktop.svg"/>
+								<a class="site-footer__contact-information-hotline-number" href="tel:0900 888 345">0900 888 345 <span class="additional-info">[ EUR 1,81/min ]</span></a>
+							</div>
+						</div>
+						<div class="site-footer__contact-opening">
+							<img class="site-footer__contact-opening-icon" src="assets/images/icons/icon_opening-hours-footer_desktop.svg"/>
+							<p class="site-footer__contact-opening-title">Öffnungszeiten</p>
+							<p class="site-footer__contact-opening-hours">Montag - Freitag von 10 - 18 Uhr<br/>Samstag von 10 - 13 Uhr</p>
+						</div>
+						<ul class="site-footer__social-media-area">
+							<li><a href="#" target="_blank"><img class="site-footer__social-media-icon site-footer__social-media-icon--facebook" src="assets/images/icons/icon_facebook-footer_smartphone.svg" alt="Facebook Logo"></a></li>
+							<li><a href="#" target="_blank"><img class="site-footer__social-media-icon site-footer__social-media-icon--instragram" src="assets/images/icons/icon_instagram-footer_smartphone.svg" alt="Instagram Logo"></a></li>
+						</ul>
+					</div>
+
+					<nav class="site-footer__main-navigation">
+						<ul class="site-footer__main-navigation-list">
+							<li class="site-footer__main-navigation-list-item"><a href="#">News</a></li>
+							<li class="site-footer__main-navigation-list-item"><a href="#">Produkte</a>
+								<ul class="site-footer__main-navigation-list-item--submenu">
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="https://www.apple.com/at/mac/" target="_blank">Mac</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="https://www.apple.com/at/iphone/" target="_blank">iPhone</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="https://www.apple.com/at/ipad/" target="_blank">iPad</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="https://www.apple.com/at/watch/" target="_blank">Apple Watch</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="https://www.apple.com/at/airpods/" target="_blank">AirPods</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="https://www.apple.com/at/airtag/" target="_blank">AirTag</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="https://www.apple.com/at/apple-tv-4k/" target="_blank">Apple TV</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="https://www.apple.com/at/homepod-mini/" target="_blank">HomePod mini</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="https://www.apple.com/at/shop/accessories/all" target="_blank">Zubehör</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="https://www.apple.com/at/shop/gift-cards" target="_blank">Apple Gift Card</a></li>
+								</ul>
+							</li>
+							<li class="site-footer__main-navigation-list-item"><a href="#">Leistungen</a>
+								<ul class="site-footer__main-navigation-list-item--submenu">
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="#">Beratung & Consulting</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="#">Service & Support</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="#">Reparatur & Garantie</a></li>
+									<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="#">Finanzierung</a></li>
+								</ul>
+							</li>
+							<li class="site-footer__main-navigation-list-item"><a href="#">Fragen & Antworten</a></li>
+							<li class="site-footer__main-navigation-list-item"><a href="#">Über uns</a>
+							<ul class="site-footer__main-navigation-list-item--submenu">
+								<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="#">Kontakt & Anfahrt</a></li>
+								<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="#">Unser Team</a></li>
+								<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="#">Das Unternehmen</a></li>
+								<li class="site-footer__main-navigation-list-item site-footer__main-navigation-list-item--submenu-item"><a href="#">Jobs</a></li>
+							</ul>
+						</ul>
+						</li>
+					</nav>
+
+					<p class="site-footer__copyright">©&nbsp;2022 mac)office - macs work easier. <span>Ihr autorisierteer Apple-Händler in Wiener Neustadt.</span></p>
+
+				</div>
+
+			</footer>
+
+			<!-- === START SCRIPTS AREA === -->
+
+			<!-- Accordion Functionality -->
+			<script>
+				const items = document.querySelectorAll(".accordion button");
+
+				function toggleAccordion() {
+					const itemToggle = this.getAttribute('aria-expanded');
+
+					for (i = 0; i < items.length; i++) {
+						items[i].setAttribute('aria-expanded', 'false');
+					}
+
+					if (itemToggle == 'false') {
+						this.setAttribute('aria-expanded', 'true');
+					}
+				}
+
+				items.forEach(item => item.addEventListener('click', toggleAccordion));
+			</script>
+
+		</body>
 </html>

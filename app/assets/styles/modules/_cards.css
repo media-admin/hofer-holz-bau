@@ -1,0 +1,130 @@
+/* === CARDS === */
+
+.card {
+	position: relative;
+	background-color: white;
+	border-radius: 17px;
+	/* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	mix-blend-mode: multiply;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	overflow: hidden;
+
+	@mixin atTablet {
+
+	}
+
+	&__container {
+		padding: 0.25rem;
+
+		@mixin atTablet {
+
+		}
+
+	}
+
+	&__pretitle {
+		position: relative;
+		width: 100%;
+		color: $mainGrey;
+		font-size: 1.0rem;
+		font-weight: 700;
+		line-height: 1.0rem;
+
+		@mixin atTablet {
+
+		}
+
+	}
+
+	&__title {
+		position: relative;
+		width: 100%;
+		color: $mainGreen;
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 1.8rem;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+
+
+		@mixin atTablet {
+
+		}
+
+	}
+
+	&__subtitle {
+		position: relative;
+		width: 100%;
+		color: $mainGrey;
+		font-size: 1.0rem;
+		font-weight: 700;
+		line-height: 1.0rem;
+
+		@mixin atTablet {
+
+		}
+
+	}
+
+	&__line--dotted {
+		position: relative;
+		width: 6%;
+		border-bottom: 4px dotted $mainGreen;
+		margin-top: 1.5rem;
+		margin-bottom: 0.5rem;
+
+		@mixin atTablet {
+			position: relative;
+			width: 4%;
+			border-bottom: 6px dotted $mainGreen;
+		}
+
+	}
+
+
+	&__thumbnail {
+		margin-top: 1.0rem;
+		margin-bottom: 1.0rem;
+
+		@mixin atTablet {
+
+		}
+	}
+
+	&__content {
+		padding-bottom: 2.5rem;
+
+		@mixin atTablet {
+
+		}
+	}
+
+	&__content p {
+		line-height: 2.2rem !important;
+		padding-bottom: 0.75rem;
+
+		@mixin atTablet {
+
+		}
+
+	}
+
+
+	&__button {
+	font-size: 0.9rem;
+	font-weight: 500;
+	border-radius: 28px;
+	margin: 0.25rem 0;
+	margin-bottom: 2.0rem !important;
+	padding: 0.75rem 1.0rem;
+
+		@mixin atTablet {
+
+		}
+
+	}
+
+}

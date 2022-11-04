@@ -1,0 +1,358 @@
+/* === SITE-HEADER === */
+.site-header {
+  position: relative;
+  display: flex;
+  display: block;
+  width: 100%;
+  min-height: 1.6rem;
+  height: auto;
+  background-color: $lightGreen;
+  z-index: 1 !important;
+  padding-top: 15px;
+
+  @mixin atLaptop {
+    height: auto;
+    background-color: $lightGreen;
+    border-bottom: 3px solid $mainGreen;
+    z-index: 1 !important;
+  }
+
+  &--is-active {
+    background-color: rgba(white, 0.55);
+  }
+
+  @mixin atLaptop {
+    /* position: fixed;
+    top: 0px;
+    background-color: rgba(white, 0.3);
+    */
+  }
+
+  @mixin atDesktop {
+    /*
+    background-color: rgba(white, 1.00) !important;
+    box-shadow: 0px 3px 22px -3px #000000;
+    z-index: 1 !important;
+    */
+
+  }
+
+  &__branding {
+    display: block;
+    width: 60%;
+    padding-left: -18px;
+    padding-right: -18px;
+
+    @mixin atLaptop {
+      display: inline-flex;
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease-out;
+
+    @mixin atLaptop {
+      width: auto;
+      left: auto;
+      transform: translateX(0);
+
+      .site-header--dark & {
+        transform: scale(0.85);
+      }
+    }
+  }
+
+  &__logo-img {
+    position: relative;
+
+    @mixin atLaptop {
+      max-width: 450px;
+      width: auto;
+      height: auto;
+    }
+
+    @mixin atDesktop {
+      width: auto;
+    }
+
+  }
+
+  &-logo__link {
+    position: relative;
+    display: block;
+    margin-top: 0px;
+  }
+
+  &__holzbaumeister {
+    position: absolute;
+    top: 35px;
+    display: inline-block;
+    max-width: 15%;
+    left: 60%;
+    line-height: 1.0rem;
+    border-left: 1px solid $lightGreen;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+
+    @mixin atLaptop {
+      position: relative;
+      min-width: inherit;
+      max-width: auto;
+      width: inherit;
+      top: 20px;
+      left: inherit;
+      padding-left: 0px;
+    }
+
+    @mixin atDesktop {
+
+    }
+  }
+
+  &__holzbaumeister-img {
+    position: relative;
+    line-height: 1.0rem;
+    margin-top: 8px;
+
+    @mixin atLaptop {
+      margin-top: 15px;
+      min-width: 100px;
+      height: auto;
+    }
+
+    @mixin atDesktop {
+
+    }
+
+  }
+
+
+  &__navi-contact-area {
+
+    @mixin atLaptop {
+      position: relative;
+      width: 100%;
+
+    }
+
+    @mixin atDesktop {
+
+    }
+
+  }
+
+
+
+  &__navi-contact-information {
+    display: none !important;
+
+
+    @mixin atLaptop {
+      position: relative;
+      display: inline-flex !important;
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      border-top: 0px solid $mainGreen;
+      border-bottom: 0px solid $mainGreen;
+      padding-left: 18px;
+      /* padding-right: 18px; */
+      padding-bottom: 0.75rem;
+    }
+
+    @mixin atDesktop {
+
+    }
+
+    & a {
+      font-family: 'Kanit';
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: $mainBrown;
+      padding-left: 2.0rem;
+    }
+
+  }
+
+
+  &__navi-contact-information-phone {
+    position: relative;
+    width: 100%;
+    line-height: 0.8rem;
+  }
+
+  &__navi-contact-information-phone-icon {
+    width: 22px;
+    padding-right: 0.25rem;
+    padding-top: 1.5rem;
+
+  }
+
+
+  &__navi-contact-information-phone-callout {
+    font-family: 'Kanit';
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $mainGreen;
+    padding-left: 0.5rem;
+  }
+
+
+  &__navi-contact-information-phone-number {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+
+  &__navi-contact-information-mail {
+    position: relative;
+    width: 100%;
+    line-height: 0.8rem;
+    text-align: right;
+
+    @mixin atLaptop {
+      text-align: inherit;
+
+    }
+  }
+
+  &__navi-contact-information-mail-icon {
+    width: 22px;
+    padding-right: 0.25rem;
+    padding-top: 1.5rem;
+  }
+
+
+  &__navi-contact-information-mail-callout {
+    font-family: 'Kanit';
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $mainGreen;
+    padding-left: 0.5rem;
+  }
+
+
+  &__navi-contact-information-mail-address {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  &__navi-additional-area {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    left: 0px;
+    z-index: -1;
+
+
+    border-top: 2px solid $mainGreen;
+    border-bottom: 2px solid $mainGreen;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding-top: 0.5rem;
+    /* padding-right: 18px; */
+    padding-bottom: 0.75rem;
+    padding-left: 18px;
+
+    @mixin atLaptop {
+      display: none !important;
+    }
+
+    @mixin atDesktop {
+
+    }
+  }
+
+
+
+  &__navi-additional-area a {
+    font-family: 'Kanit';
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: $mainBrown;
+    padding-left: 2.0rem;
+  }
+
+
+  &__navi-additional-area-phone {
+    width: 50%;
+    line-height: 0.8rem;
+    margin-top: 15px;
+  }
+
+
+  &__navi-additional-area-mail {
+    width: 50%;
+    line-height: 0.8rem;
+    margin-top: 15px;
+  }
+
+
+  &__navi-additional-area-phone-callout {
+    font-family: 'Kanit';
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $mainGreen;
+    padding-left: 0.5rem;
+  }
+
+
+  &__navi-additional-area-mail-callout {
+    font-family: 'Kanit';
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $mainGreen;
+    padding-left: 0.5rem;
+  }
+
+
+  &__navi-additional-area-phone-number {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+
+  &__navi-additional-area-mail-address {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+}

@@ -1,0 +1,83 @@
+/* === FAQ SECTION === */
+
+.faq {
+	margin-bottom: 1.5rem;
+
+	@mixin atLaptop {
+
+	}
+
+	&__headline {
+		font-weight: 700;
+		color: $mainGrey;
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+	&__intro {
+		font-weight: 500;
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+	&__container {
+
+
+
+		@mixin atLaptop {
+
+
+		}
+
+	}
+
+
+	&__card {
+
+
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+	&__accordion {
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+	&__accordion-item {
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+	&__accordion-title {
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+	&__accordion-content {
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+}

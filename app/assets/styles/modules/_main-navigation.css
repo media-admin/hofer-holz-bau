@@ -1,0 +1,237 @@
+/* --- Navigation Menu --- */
+.main-navigation {
+  position: absolute;
+  display: inline-block;
+  width: auto; /*15%*/
+  top: 20px;
+  left: auto;
+  right: 10px;
+
+  @mixin atLaptop {
+    position: relative;
+    display: flex;
+    width: 100%;
+
+    color: white;
+    background-color: $mainGrey;
+
+    border-top: 4px solid $mainBrown;
+    border-bottom: 4px solid $mainBrown;
+
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+
+.main-navigation .is-active {
+
+  @mixin atLaptop {
+
+  }
+}
+
+
+
+menu.site-menu {
+  position: relative;
+  margin-top: -5px;
+
+  @mixin atLaptop {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.navbar {
+  display: none;
+
+  @mixin atLaptop {
+    position: relative;
+    display: flex;
+    display: block !important;
+    width: 100%;
+    justify-content: normal;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.navbar a {
+
+  @mixin atLaptop {
+
+  }
+}
+
+.is-active .navbar {
+  /* position: absolute; */
+  top: 80px;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  text-align: center;
+  background: $mainGrey;
+  transition: 0.8s;
+  z-index: 1;
+
+  @mixin atLaptop {
+    position: relative;
+    top: inherit;
+    display: inline-flex;
+    width: 100%;
+    height: inherit;
+    left: 0;
+    text-align: inherit;
+    background: inherit;
+    transition: none;
+    z-index: inherit;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.is-active .navbar li a {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: $mainGrey;
+  list-style-type: none;
+  margin: 0.10rem auto;
+
+  @mixin atLaptop {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding-top: 0px;
+  }
+}
+
+
+
+.navbar__navigation-list {
+  list-style-type: none;
+  line-height: 1.8rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  padding-left: 0px;
+
+  @mixin atLaptop {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+    padding-top: 5px;
+  }
+}
+
+.navbar__navigation-list li {
+  list-style-type: none;
+
+  @mixin atLaptop {
+    position: relative;
+    display: flex;
+    width: auto;
+    align-items: center;
+
+    font-size: 1.0rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: $mainGrey;
+  }
+}
+
+.navbar__navigation-list li a {
+
+  @mixin atLaptop {
+    font-family: 'Bitter';
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    width: auto;
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+/* === Burger Menu === */
+.burger-menu {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 35px;
+  top: 35px;
+  right: 10px;
+  transition: border-radius 0.5s;
+
+  @mixin atLaptop {
+    display: none;
+    visibility: hidden;
+  }
+
+  &-caption {
+    position: relative;
+    display: inline-block;
+    top: 40px;
+    right: 10px;
+    font-family: 'Kanit';
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+}
+
+.line {
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 30px;
+  left: -10px;
+  background: $mainGrey;
+  margin-top: 0;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.line:nth-child(1) {
+  top: 10px;
+}
+.line:nth-child(2) {
+  top: 20px;
+}
+.line:nth-child(3) {
+  top: 30px;
+}
+
+/* --- Burger Menu Animation  --- */
+.burger-menu.checked .line:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.burger-menu.checked .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.checked .line:nth-child(3) {
+  transform: translateY(-10px) rotate(45deg);
+}
+
+
+.burger-menu.checked .burger-menu-caption {
+  display: none;
+}

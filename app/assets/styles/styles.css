@@ -1,6 +1,25 @@
 @import 'normalize.css';
 @import 'base/_variables';
 @import 'base/_mixins';
-@import 'base/_global';
+
+@import "base/_fonts";
+@import "modules/_wrapper";
+@import "base/_global";
+
+@import "modules/_dywc";
+@import "modules/_button-back-to-top";
+@import "modules/_text-styles";
+
+@import "modules/_cards";
+@import "modules/_accordions";
+
+@import "modules/_site-header";
+@import "modules/_main-navigation";
+
 @import 'modules/_large-hero';
-@import 'modules/_wrapper';
+
+@import "modules/_faq-section";
+
+@import "modules/_site-footer";
+@import "modules/_modal";
+@import "modules/_social-icons";
