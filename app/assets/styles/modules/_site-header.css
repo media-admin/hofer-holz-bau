@@ -46,6 +46,7 @@
     @mixin atLaptop {
       display: inline-flex;
       width: 100%;
+      min-height: 200px;
     }
   }
 
@@ -83,6 +84,30 @@
 
   }
 
+
+  &__logo-img--smartphone {
+    display: block;
+
+    @mixin atLaptop {
+      display: none;
+    }
+
+  }
+
+
+  &__logo-img--desktop {
+    display: none;
+
+    @mixin atLaptop {
+      display: block;
+    }
+
+  }
+
+
+
+
+
   &-logo__link {
     position: relative;
     display: block;
@@ -91,12 +116,11 @@
 
   &__holzbaumeister {
     position: absolute;
-    top: 35px;
     display: inline-block;
     max-width: 15%;
+    top: 20px;
     left: 60%;
     line-height: 1.0rem;
-    border-left: 1px solid $lightGreen;
     margin-bottom: 20px;
     padding-bottom: 15px;
 
@@ -156,12 +180,13 @@
     @mixin atLaptop {
       position: relative;
       display: inline-flex !important;
+      align-items: flex-end;
       width: 100%;
       margin-top: 25px;
       margin-bottom: 20px;
       border-top: 0px solid $mainGreen;
       border-bottom: 0px solid $mainGreen;
-      padding-left: 18px;
+      /* padding-left: 18px; */
       /* padding-right: 18px; */
       padding-bottom: 0.75rem;
     }
@@ -176,9 +201,38 @@
       font-weight: 500;
       text-decoration: none;
       color: $mainBrown;
-      padding-left: 2.0rem;
+      /* padding-left: 2.0rem; */
     }
 
+  }
+
+
+
+  &__navi-contact-information-phone {
+    display: inline-flex;
+    align-items: flex-start;
+    width: 50%;
+    line-height: 0.8rem;
+    margin-top: 15px;
+  }
+
+
+  &__navi-contact-information-mail {
+    display: inline-flex;
+    align-items: flex-start;
+    width: 50%;
+    line-height: 0.8rem;
+    margin-top: 10px;
+  }
+
+
+  &__navi-contact-information-phone-infos {
+    margin-left: 0.5rem !important;
+  }
+
+
+  &__navi-contact-information-mail-infos {
+    margin-left: 0.5rem !important;
   }
 
 
@@ -189,9 +243,8 @@
   }
 
   &__navi-contact-information-phone-icon {
-    width: 22px;
-    padding-right: 0.25rem;
-    padding-top: 1.5rem;
+    width: 25px;
+    margin-top: -5px;
 
   }
 
@@ -203,7 +256,6 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $mainGreen;
-    padding-left: 0.5rem;
   }
 
 
@@ -228,8 +280,8 @@
 
   &__navi-contact-information-mail-icon {
     width: 22px;
-    padding-right: 0.25rem;
-    padding-top: 1.5rem;
+    margin-top: -5px;
+
   }
 
 
@@ -240,7 +292,6 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $mainGreen;
-    padding-left: 0.5rem;
   }
 
 
@@ -269,7 +320,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: flex-end;
     left: 0px;
     z-index: -1;
 
@@ -283,6 +334,7 @@
     padding-top: 0.5rem;
     /* padding-right: 18px; */
     padding-bottom: 0.75rem;
+    padding-right: 18px;
     padding-left: 18px;
 
     @mixin atLaptop {
@@ -295,18 +347,18 @@
   }
 
 
-
   &__navi-additional-area a {
     font-family: 'Kanit';
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
     color: $mainBrown;
-    padding-left: 2.0rem;
   }
 
 
   &__navi-additional-area-phone {
+    display: inline-flex;
+    align-items: flex-start;
     width: 50%;
     line-height: 0.8rem;
     margin-top: 15px;
@@ -314,45 +366,85 @@
 
 
   &__navi-additional-area-mail {
+    display: inline-flex;
+    align-items: flex-start;
     width: 50%;
     line-height: 0.8rem;
-    margin-top: 15px;
+    margin-top: 10px;
+  }
+
+
+  &__navi-additional-area-phone-infos {
+    padding-left: 0.5rem;
+  }
+
+
+  &__navi-additional-area-mail-infos {
+    padding-left: 0.5rem;
+  }
+
+
+  &__navi-additional-area-phone-icon {
+    width: 25px;
+    margin-top: -5px;
+  }
+
+
+  &__navi-additional-area-mail-icon {
+    margin-top: -5px;
   }
 
 
   &__navi-additional-area-phone-callout {
     font-family: 'Kanit';
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
     color: $mainGreen;
-    padding-left: 0.5rem;
-  }
 
+    @mixin atLaptop {
+      font-size: 1.4rem;
+      padding-left: 0.5rem;
+    }
+  }
 
   &__navi-additional-area-mail-callout {
     font-family: 'Kanit';
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
     color: $mainGreen;
-    padding-left: 0.5rem;
+
+    @mixin atLaptop {
+      font-size: 1.4rem;
+      padding-left: 0.5rem;
+    }
   }
 
 
   &__navi-additional-area-phone-number {
     display: block;
+    font-size: 0.8rem !important;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+
+    @mixin atLaptop {
+      font-size: 1.2rem;
+    }
   }
 
 
   &__navi-additional-area-mail-address {
     display: block;
+    font-size: 0.8rem !important;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+
+    @mixin atLaptop {
+      font-size: 1.2rem;
+    }
   }
 
 }

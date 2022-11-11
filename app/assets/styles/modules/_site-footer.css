@@ -5,24 +5,144 @@
 	font-size: 0.9rem;
 	color: white;
 	line-height: 1.6rem;
-	text-align: center;
+	text-align: center !important;
 	letter-spacing: 0.05rem;
 	margin-top: 4.0rem;
+	background-color: $mainBrown;
 
-	&__container--gray {
-		width: calc(100%-50px) !important;
-		background-color: $mainGrey;
-		margin-top: 0px;
-		margin-bottom: 0px;
-		padding-top: 1.4rem;
-		padding-bottom: 1.4rem;
+	a {
+		color: white;
+		text-decoration: none;
 	}
 
-	&__container--gray a {
-		color: $mainGrey;
+
+	&__contact-area {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+		width: 100%;
+		text-align: center;
+		color: white;
+		background-color: $mainGreen;
+		margin: 0 auto;
+		padding-top: 0.5rem;
+		padding-bottom: 0.0rem;
+
+		@mixin atLaptop {
+			padding-top: 2.0rem;
+			padding-bottom: 1.0rem;
+		}
+
 	}
 
-	&__container--gray &__navigation {
+
+	&__contact-phone-container {
+		position: relative;
+	}
+
+
+	&__contact-phone-infos {
+
+	}
+
+
+	&__contact-phone-icon {
+		width: 20px;
+
+		@mixin atLaptop {
+			width: 30px;
+			top: -5px;
+			margin-right: 5px;
+		}
+	}
+
+
+	&__contact-phone-number {
+		position: relative;
+		top: -5px;
+		font-family: 'Kanit';
+		font-size: 0.8rem;
+		font-weight: 500;
+		border-right: 1.5px solid $mainBrown;
+		padding-right: 0.5rem;
+
+		@mixin atLaptop {
+			font-size: 2.0rem;
+			border-right: 2.5px solid $mainBrown;
+		}
+
+	}
+
+
+	&__contact-mail-container {
+		position: relative;
+	}
+
+
+	&__contact-mail-infos {
+		padding-left: 0.5rem;
+	}
+
+
+	&__contact-mail-icon {
+		width: 18px;
+		top: -5px;
+
+		@mixin atLaptop {
+			width: 30px;
+			top: -5px;
+			margin-left: 5px;
+		}
+
+	}
+
+
+	&__contact-mail-address {
+		position: relative;
+		top: -5px;
+		font-family: 'Kanit';
+		font-size: 0.8rem;
+		font-weight: 500;
+
+		@mixin atLaptop {
+			font-size: 2.0rem;
+		}
+
+	}
+
+
+
+
+
+
+
+
+	&__navigation-area {
+		display: flex;
+		flex-flow: column;
+
+		@mixin atLaptop {
+			flex-direction: row;
+			padding-top: 1.5rem;
+			padding-bottom: 4.0rem;
+		}
+
+	}
+
+
+	&__navigation-container {
+		order: 1;
+
+		@mixin atLaptop {
+			position: relative;
+			width: 75%;
+			order: 2;
+		}
+	}
+
+
+	&__navigation {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
@@ -34,129 +154,83 @@
 		padding-top: 0.0rem;
 	}
 
-	&__container--gray &__navigation-list {
+	&__navigation-list {
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: baseline;
-		width: 100%;
+		width: 90%;
 		font-size: 0.8rem;
 		font-weight: 500;
+		list-style: none;
 		line-height: 1.6rem;
-		padding-right: 25px;
-		padding-left: 25px;
+		margin: 0 auto;
+		margin-top: 2.0rem;
+		padding-left: inherit;
+
+		@mixin atLaptop {
+			justify-content: flex-end;
+			margin-right: 5%;
+			gap: 100px;
+		}
+
 	}
+
+
+	&__navigation-list-item {
+		font-family: 'Bitter';
+		font-size: 1.0rem;
+		text-align: center;
+	}
+
 
 	&__navigation-list a {
 		text-decoration: none;
 	}
 
-	&__container--gray &__navigation-list-item {
-		position: relative;
-		color: white;
-		list-style-type: none;
-		line-height: 1.8rem;
-		margin-top: 0.5rem;
-		margin-bottom: 0.5rem;
-		cursor: pointer;
-	}
 
-	&__link-teamviewer {
-		color: white !important;
-		background-color: $mainGrey;
-		border-radius: 25px;
-		padding: 0.75rem 1.0rem;
-	}
 
-	&__container--black {
-		margin-top: 0px;
-		margin-bottom: 0px;
-		padding-top: 1.4rem;
-		padding-bottom: 1.4rem;
+
+
+
+
+
+
+	&__copyright-container {
+		order: 2;
 
 		@mixin atLaptop {
-			display: flex;
-
-			padding-right: 25px;
-			padding-left: 25px;
-		}
-
-		@mixin atDesktop {
-
-		}
-	}
-
-	&__container--black a {
-		color: white;
-		text-decoration: none;
-	}
-
-	&__branding {
-		position: relative;
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: space-around;
-		text-align: left;
-		width: 100%;
-
-		@mixin atLaptop {
+			position: relative;
 			width: 25%;
+			order: 1;
+			text-align: left;
+			margin-left: 2.5%;
 		}
-
-		@mixin atDesktop {
-
-		}
 	}
 
-	&__container--black &__logo-link {
-		padding-right: inherit;
-		padding-left: inherit;
-	}
 
-	&__container--black &__logo-link a {
-		padding-right: inherit;
-		padding-left: inherit;
-	}
-
-	&__apple-haendler {
-		margin-top: 12px;
-		margin-right: 10px;
-	}
-
-	&__contact {
+	&__copyright {
 		position: relative;
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: space-around;
-		text-align: left;
-
-		flex-grow: 0;     /* do not grow   - initial value: 0 */
-		flex-shrink: 0;   /* do not shrink - initial value: 1 */
-		flex-basis: 50%; /* width/height  - initial value: auto */
-
-		width: calc(100%-50px) !important;
-
+		width: 85%;
+		font-family: 'Kanit';
 		font-size: 0.7rem;
-		line-height: 1.4rem;
-
-		margin-top: 1.5rem;
-		margin-bottom: 1.5rem;
-
-		padding-left: 25px;
-		padding-right: 25px;
+		font-weight: 500;
+		margin: 2.0rem auto;
+		margin-bottom: 0px;
+		padding-top: 2.0rem;
+		padding-bottom: 1.5rem;
 
 		@mixin atLaptop {
-			position: absolute;
-			width: 25%;
-			/* top: 225px
-			top: 90px; */
-			top: 225px;
-			font-size: 0.8rem;
-			line-height: 1.5rem;
+			display: block;
+			width: 100%;
+			bottom: 0px;
+			font-size: 0.9rem;
+			font-weight: 400;
+			margin-top: 0px;
+			padding-top: 2.0rem;
+			padding-bottom: 25px;
 		}
 
 		@mixin atDesktop {
@@ -164,469 +238,6 @@
 		}
 	}
 
-	&__contact a {
-		font-weight: 600;
-		text-decoration: none;
-		color: white;
-	}
 
-	&__contact-address {
-		position: relative;
-		width: 50%;
-	}
-
-	&__contact-address-icon {
-		position: relative;
-		width: 20px;
-		top: 5px;
-		padding-right: 0.25rem;
-	}
-
-	&__contact-address-title {
-		position: relative;
-		display: inline;
-		text-decoration: underline;
-
-		@mixin atLaptop {
-			font-weight: 500 !important;
-		}
-	}
-
-	&__contact-address-data {
-		position: relative;
-		display: block;
-		color: white;
-		margin-top: 0.5rem;
-	}
-
-
- &__contact-information {
-	position: relative;
-	width: 50%;
-	/* margin-top: 0.25rem; */
-
-
-	@mixin atLaptop {
-
-	}
-
-	@mixin atDesktop {
-
-	}
-
-}
-
-
-&__contact-information-phone {
-	display: inline-flex;
-	padding-right: 1.0rem;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-&__contact-information-phone-icon {
-	width: 20px;
-	padding-right: 0.25rem;
-}
-
-&__contact-information-phone-number {
-
-}
-
-
-
-
-
-&__contact-information-mail {
-	display: inline-flex;
-	padding-right: 1.0rem;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-&__contact-information-mail-icon {
-	width: 20px;
-	padding-right: 0.25rem;
-}
-
-&__contact-information-mail-address {
-
-}
-
-&__contact-information-hotline {
-	display: inline-flex;
-	padding-right: 1.0rem;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-&__contact-information-hotline-icon {
-	position: relative;
-	width: 20px;
-	top: -8px;
-	padding-right: 0.25rem;
-}
-
-&__contact-information-hotline-number {
-	line-height: 1.0rem;
-}
-
-&__contact-information-hotline-number .additional-info {
-	position: relative;
-	display: block;
-}
-
-	&__contact-opening {
-	position: relative;
-	width: 70%;
-
-	@mixin atLaptop {
-		width: 60%;
-	}
-}
-
-&__contact-opening-icon {
-	position: relative;
-	width: 20px;
-	top: 5px;
-	padding-right: 0.25rem;
-}
-
-&__contact-opening-title {
-	position: relative;
-	display: inline;
-	text-decoration: underline;
-
-	@mixin atLaptop {
-		font-weight: 700 !important;
-	}
-}
-
-&__contact-opening-hours {
-	position: relative;
-	display: block;
-	color: white;
-	margin-top: 0.5rem;
-}
-
-
-
-
-
-
-
-&__social-media-area {
-	position: relative;
-	display: grid;
-	width: 20%;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	list-style-type: none;
-	margin: 2.0rem auto;
-	padding-left: 0;
-}
-
-
-
-
-
-
-
-&__main-navigation {
-	font-weight: 700;
-	line-height: 2.0rem;
-	color: white;
-	padding-top: 0.0rem;
-	padding-left: 25px;
-	padding-right: 25px;
-
-	@mixin atLaptop {
-		position: relative;
-		display: inline-flex;
-		width: 100%;
-
-		/* display: flex; */
-		flex-wrap: wrap;
-		flex-direction: row;
-
-		text-align: left;
-		flex-grow: 0;
-		flex-shrink: 0;
-		flex-basis: 50%;
-		/* justify-content: flex-start; */
-		justify-content: center;
-		margin-top: -10px;
-		margin-bottom: 1.5rem;
-
-
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-
-&__main-navigation:before {
-	position: relative;
-	display: block;
-	width: 35%;
-	height: 1px;
-	background: rgba(255,255,255,0.5);
-	content: "";
-	margin: 25px auto;
-
-	@mixin atLaptop {
-		display: none;
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-
-&__main-navigation:after {
-	position: relative;
-	display: block;
-	width: 35%;
-	height: 1px;
-	background: rgba(255,255,255,0.5);
-	content: "";
-	margin: 25px auto;
-
-	@mixin atLaptop {
-		display: none;
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-
-
-&__main-navigation-list {
-	display: flex;
-	flex-basis: 50%;
-
-	flex-direction: row;
-	flex-wrap: wrap;
-
-	flex-grow: 0;
-	flex-shrink: 0;
-	justify-content: flex-start;
-	align-items: baseline;
-	color: white;
-	text-align: left;
-	list-style-type: none;
-	padding-left: 0px;
-
-	@mixin atLaptop {
-		display: flex;
-		flex-basis: initial;
-		flex-direction: column;
-		max-height: 450px;
-		flex-basis: 25%;
-	}
-
-	@mixin atDesktop {
-
-	}
-
-}
-
-&__main-navigation-list a {
-	text-decoration: none;
-
-	@mixin atLaptop {
-
-
-	}
-
-}
-
-&__main-navigation-list a:hover {
-	text-decoration: underline;
-	text-underline-offset: 6px;
-	text-decoration-color: $mainGreen;
-}
-
-
-&__main-navigation-list-item {
-	position: relative;
-	width: 100%;
-	font-size: 1.2rem;
-	line-height: 1.8rem;
-	padding-top: 0.6rem;
-	padding-top: 0.6rem;
-
-	@mixin atLaptop {
-		max-width: 100%;
-		width: fit-content;
-		flex-basis: 50%;
-		padding-left: inherit;
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-
-&__main-navigation-list > &__main-navigation-list-item {
-	width: 100%;
-
-	@mixin atLaptop {
-
-		margin-right: 25px;
-
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-
-&__main-navigation-list > &__main-navigation-list-item:first-of-type {
-
-
-	@mixin atLaptop {
-		/* margin-left: 35%;
-		margin-right: -15%; */
-		margin-left: 20%;
-		margin-right: -10%;
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-&__main-navigation-list > &__main-navigation-list-item:last-of-type {
-
-
-	@mixin atLaptop {
-		margin-left: 25%;
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-
-&__main-navigation-list > &__main-navigation-list-item:nth-of-type(4) {
-
-
-	@mixin atLaptop {
-		width: 100%
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-
-
-
-
-&__main-navigation-list-item--submenu {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: baseline;
-	padding-left: 0px;
-
-	@mixin atLaptop {
-
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-
-
-&__main-navigation-list-item--submenu > &__main-navigation-list-item {
-	width: 50%;
-	font-size: 0.8rem;
-	font-weight: 300;
-	list-style-type: none;
-	padding-left: 0px;
-	padding-top: initial;
-	padding-top: initial;
-
-	@mixin atLaptop {
-
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-
-&__main-navigation-list-item--submenu-item {
-
-
-	@mixin atLaptop {
-		width: 100%;
-		flex-direction: column;
-		flex-basis: 100%;
-		flex-wrap: wrap;
-		flex-grow: 0;
-		flex-shrink: 0;
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-
-
-
-
-
-&__copyright {
-	position: relative;
-	width: 75%;
-	font-size: 0.9rem;
-	font-weight: 300;
-	margin: 2.0rem auto;
-	margin-bottom: 0px;
-	padding-top: 2.0rem;
-	padding-bottom: 2.0rem;
-
-	@mixin atLaptop {
-		position: absolute;
-		display: block;
-		width: 100%;
-		bottom: 0px;
-		margin-top: 25px;
-		padding-bottom: 25px;
-	}
-
-	@mixin atDesktop {
-
-	}
-}
-
-&__copyright span {
-	font-size: 0.6rem;
-
-	@mixin atLaptop {
-		font-size: 0.9rem;
-	}
-
-	@mixin atDesktop {
-
-	}
-}
 
 }

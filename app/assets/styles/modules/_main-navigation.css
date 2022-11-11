@@ -3,12 +3,12 @@
   position: absolute;
   display: inline-block;
   width: auto; /*15%*/
-  top: 20px;
+  top: 0px !important;
   left: auto;
   right: 10px;
 
   @mixin atLaptop {
-    position: relative;
+    position: initial;
     display: flex;
     width: 100%;
 
@@ -18,7 +18,8 @@
     border-top: 4px solid $mainBrown;
     border-bottom: 4px solid $mainBrown;
 
-    margin-bottom: 15px;
+    margin-bottom: -4px;
+
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -53,8 +54,9 @@ menu.site-menu {
     display: block !important;
     width: 100%;
     justify-content: normal;
-    margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 0px;
+    margin-left: 15px;
   }
 }
 
@@ -66,16 +68,17 @@ menu.site-menu {
 }
 
 .is-active .navbar {
-  /* position: absolute; */
-  top: 80px;
+  position: fixed;
+  top: 150px;
   display: block;
   width: 100vw;
   height: 100vh;
   left: 0px;
   text-align: center;
-  background: $mainGrey;
+  background: $lightGreen;
   transition: 0.8s;
   z-index: 1;
+  margin: 0px;
 
   @mixin atLaptop {
     position: relative;
@@ -132,6 +135,16 @@ menu.site-menu {
   }
 }
 
+
+.is-active .navbar__navigation-list {
+  width: 90%;
+  border: 1px solid $mainGrey;
+  margin: 15px auto;
+  padding: 2.0rem;
+}
+
+
+
 .navbar__navigation-list li {
   list-style-type: none;
 
@@ -162,6 +175,14 @@ menu.site-menu {
 }
 
 
+.is-active .navbar li a {
+  font-family: 'Bitter' !important;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 3.0rem;
+  color: $mainGreen;
+  text-decoration: none;
+}
 
 
 
@@ -173,7 +194,7 @@ menu.site-menu {
   display: inline-block;
   width: 45px;
   height: 35px;
-  top: 35px;
+  top: 40px;
   right: 10px;
   transition: border-radius 0.5s;
 
@@ -187,9 +208,10 @@ menu.site-menu {
     display: inline-block;
     top: 40px;
     right: 10px;
+    color: $mainGreen;
     font-family: 'Kanit';
     font-size: 0.6rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
   }
@@ -199,10 +221,10 @@ menu.site-menu {
 .line {
   position: absolute;
   display: block;
-  height: 3px;
+  height: 2px;
   width: 30px;
   left: -10px;
-  background: $mainGrey;
+  background: $mainGreen;
   margin-top: 0;
   transition: 0.5s;
   transform-origin: center;
