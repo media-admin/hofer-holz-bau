@@ -1,5 +1,5 @@
 body {
-	font-family: 'Kanit';
+	font-family: 'Kanit', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.4rem;
@@ -9,4 +9,26 @@ body {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+
+.btn {
+	position: relative;
+	display: inline-block;
+	font-family: 'Kanit', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 2.0rem;
+	text-decoration: none;
+	margin: 0.25rem 0.0rem;
+	margin-bottom: 2.0rem !important;
+	padding: 0.75rem 1.0rem;
+}
+
+
+
+.btn--brown {
+	color: white;
+	background-color: $mainBrown;
+	border: 4px solid $mainGreen;
 }

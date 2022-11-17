@@ -1,0 +1,130 @@
+/* === SECTION PARTNER === */
+.section-partner {
+
+	&__intro {
+
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+	&__container {
+		position: relative;
+		display: block;
+		width: 100%;
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+
+	&__listing {
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex: 1;
+		flex-wrap: wrap;
+
+		@mixin atLaptop {
+			flex: 3;
+			margin-left: -18px;
+		}
+
+	}
+
+
+	&__listing-item {
+		position: relative;
+		width: 100%;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-direction: row;
+		flex-grow: 0;
+		flex-shrink: 0;
+		justify-content: space-around;
+		align-items: flex-start;
+		text-align: center;
+		list-style: none;
+		border: 1px solid $mainGrey;
+		margin: 0.5rem;
+		padding: 0.0rem;
+
+		@mixin atLaptop {
+			position: relative;
+			width: 30%;
+			flex-grow: 0;
+			flex-shrink: 0;
+		}
+
+	}
+
+
+	&__link {
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+
+	&__logo {
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+
+	&__data {
+		font-family: 'Kanit', sans-serif;
+		font-weight: 300 !important;
+		font-size: 0.7rem;
+		color: $mainGrey;
+		text-decoration: none;
+		border-top: 1px solid $mainGrey;
+		margin-bottom: 1.0rem;
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+
+	&__name {
+		font-size: 1.0rem;
+		line-height: 1.4rem;
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+
+	&__data a {
+		color: $mainGrey;
+		text-decoration: none;
+
+		@mixin atLaptop {
+
+		}
+
+	&__contact {
+		position: relative;
+		display: block;
+		line-height: 1.4rem;
+	}
+
+
+
+	}
+
+
+}

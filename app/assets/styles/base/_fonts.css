@@ -11,7 +11,22 @@
 			 url('../fonts/FontAwesome/fa-solid-900.woff2') format('woff2'), /* Super Modern Browsers */
 			 url('../fonts/FontAwesome/fa-solid-900.woff') format('woff'), /* Modern Browsers */
 			 url('../fonts/FontAwesome/fa-solid-900.ttf') format('truetype'), /* Safari, Android, iOS */
-			 url('../fonts/FontAwesome/fa-solid-900.svg#AbrilFatface') format('svg'); /* Legacy iOS */
+			 url('../fonts/FontAwesome/fa-solid-900.svg') format('svg'); /* Legacy iOS */
+}
+
+
+/* --- Font Awesome Regular --- */
+@font-face {
+	font-family: 'FontAwesome Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/FontAwesome/fa-regular-400.eot'); /* IE9 Compact Modes */
+	src: local(''),
+			 url('../fonts/FontAwesome/fa-regular-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			 url('../fonts/FontAwesome/fa-regular-400.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('../fonts/FontAwesome/fa-regular-400.woff') format('woff'), /* Modern Browsers */
+			 url('../fonts/FontAwesome/fa-regular-400.ttf') format('truetype'), /* Safari, Android, iOS */
+			 url('../fonts/FontAwesome/fa-regular-400.svg') format('svg'); /* Legacy iOS */
 }
 
 
@@ -27,6 +42,20 @@
 			 url('../fonts/FontAwesome/fa-brands-400.woff') format('woff'), /* Modern Browsers */
 			 url('../fonts/FontAwesome/fa-brands-400.ttf') format('truetype'), /* Safari, Android, iOS */
 			 url('../fonts/FontAwesome/fa-brands-400.svg#AbrilFatface') format('svg'); /* Legacy iOS */
+}
+
+
+/* --- Elegant Icons --- */
+@font-face {
+	font-family: 'Elegant Icons';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/ElegantIcons/ElegantIcons.eot'); /* IE9 Compact Modes */
+	src: local(''),
+			 url('../fonts/ElegantIcons/ElegantIcons.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			 url('../fonts/ElegantIcons/ElegantIcons.woff') format('woff'), /* Modern Browsers */
+			 url('../fonts/ElegantIcons/ElegantIcons.ttf') format('truetype'), /* Safari, Android, iOS */
+			 url('../fonts/ElegantIcons/ElegantIcons.svg#ElegantIcons') format('svg'); /* Legacy iOS */
 }
 
 

@@ -10,6 +10,15 @@
 	margin-top: 4.0rem;
 	background-color: $mainBrown;
 
+	height: auto;
+	vertical-align: middle;
+	background-image: url('../images/footer/footer_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+
+
 	a {
 		color: white;
 		text-decoration: none;
@@ -203,7 +212,7 @@
 
 		@mixin atLaptop {
 			position: relative;
-			width: 25%;
+			width: 35%;
 			order: 1;
 			text-align: left;
 			margin-left: 2.5%;

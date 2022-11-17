@@ -1,0 +1,32 @@
+.section-experience-fullwidth {
+	position: relative;
+	display: block;
+	width: 100%+36px;
+	min-height: 350px;
+	height: auto;
+	text-align: center;
+	vertical-align: middle;
+	background-image: url('../images/sections/experience_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	margin-right: -18px !important;
+	margin-left: -18px !important;
+	padding-top: 15%;
+	padding-bottom: 15%;
+
+
+	&__content p {
+		position: relative;
+		width: 80%;
+		font-family: 'Bitter', serif;
+		font-size: 3.55rem !important;
+		font-weight: 600;
+		color: white !important;
+		line-height: 6.5rem;
+		margin: auto;
+	}
+
+
+}

@@ -1,0 +1,13 @@
+/* --- BUTTON LOAD MORE --- */
+.section-projects-overview__project-container .section-projects-overview__project-item {
+	display: none;
+}
+
+#loadMore {
+		color: $mainGrey;
+		cursor: pointer;
+}
+
+#loadMore:hover {
+		color: $mainGreen;
+}

@@ -1,0 +1,48 @@
+.section-shoutout-fullwidth {
+	position: relative;
+	display: block;
+	width: 100%+36px;
+	min-height: 350px;
+	height: auto;
+	text-align: center;
+	vertical-align: middle;
+	background-image: url('../images/sections/collection-of-vintage-woodworking-tools_web.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	margin-right: -18px !important;
+	margin-left: -18px !important;
+	padding-top: 15%;
+	padding-bottom: 15%;
+
+
+	&__content {
+		font-family: 'Bitter', serif;
+		font-size: 3.75rem;
+		font-weight: 600;
+		color: white !important;
+		line-height: 7.5rem;
+	}
+
+
+	&__title {
+		position: relative;
+		display: block;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+
+	&__content .text--heavy {
+		position: relative;
+		display: block;
+		font-size: 4.5rem;
+		text-transform: uppercase;
+		letter-spacing: 0.25rem;
+		line-height: 7.5rem;
+		padding-top: 1.0rem;
+		padding-bottom: 1.0rem;
+	}
+
+}

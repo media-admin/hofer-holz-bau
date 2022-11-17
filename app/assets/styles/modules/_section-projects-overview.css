@@ -1,0 +1,139 @@
+/* === SECTION PROJECTS OVERVIEW === */
+#project {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 50px 0px;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 2.0rem;
+}
+
+
+.section-projects-overview {
+
+	&__container {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+
+	}
+
+	&__project-filter-list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		margin-top: 20px;
+
+		flex-wrap: wrap;
+		margin: 20px;
+
+		@mixin atLaptop {
+			background-color: inherit;
+		}
+
+	}
+
+	&__project-filter-list-item {
+		font-family: 'Kanit', sans-serif;
+		font-weight: 300;
+		font-size: 1.0rem;
+		color: $mainGrey;
+		border: 1px solid $mainGrey;
+		cursor: pointer;
+		user-select: none;
+		margin: 10px;
+		padding: 5px 20px;
+	}
+
+	&__project-filter-list-item--active {
+		color: white;
+		background-color: $mainGreen;
+	}
+
+	&__project-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		text-align: left;
+		max-width: 1200px;
+		margin: auto;
+
+		@mixin atLaptop {
+			background-color: #ffffff;
+		}
+
+	}
+
+	&__project-item {
+		width: 100%;
+		color: $mainGrey;
+		border: 1px solid #eeeeee;
+		margin: 20px;
+
+		@mixin atLaptop {
+			width: 330px;
+		}
+
+	}
+
+
+	&__project-item-link {
+		text-decoration: none;
+		color: $mainGrey;
+	}
+
+
+	&__project-item-img {
+		width: 100%;
+		min-height: 440px;
+		height: auto;
+		overflow: hidden;
+		border-radius: 5px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+
+
+	&__project-item-title {
+		font-family: 'Bitter', serif;
+		font-size: 1.75rem;
+		font-weight: 500 !important;
+		line-height: 2.0rem;
+		color: $mainGrey;
+		text-align: left;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		margin-bottom: 1.0rem;
+	}
+
+
+	&__project-item-taglist {
+		text-align: left !important;
+		list-style: none;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		margin-bottom: 2.0rem;
+	}
+
+
+	&__project-item-tag {
+		position: relative;
+		display: inline-flex;
+		border: 1px solid $mainGrey;
+		padding: 0.25rem 0.5rem;
+		margin-right: 0.5rem;
+	}
+
+
+}
+
+
+

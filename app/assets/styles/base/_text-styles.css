@@ -1,0 +1,169 @@
+/* === TEXT STYLES === */
+
+/* === General Text Styles === */
+
+
+/* === Heading Styles === */
+h1 {
+	font-family: 'Bitter', serif;
+	font-weight: 900;
+	font-size: 3.4rem;
+	line-height: 5.5rem;
+	color: white;
+}
+
+.site-title {
+	font-family: 'Bitter', serif;
+	font-weight: 900;
+	font-size: 3.4rem;
+	line-height: 5.5rem;
+	color: white;
+}
+
+.h1 {
+
+	&__title {
+		font-size: 3.0rem;
+		font-weight: 700;
+		line-height: 3.0rem;
+		letter-spacing: 0.10rem;
+		margin: 1.0rem 0;
+		padding-left: 1.0rem;
+	}
+
+	&__title--left-aligned {
+		text-align: left;
+		padding-left: 1.0rem;
+	}
+
+	&__title--right-aligned {
+		text-align: right;
+		padding-right: 1.0rem;
+	}
+
+}
+
+
+h2 {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	font-family: 'Bitter', serif;
+	font-weight: 700;
+	font-size: 2.25rem;
+	line-height: 2.75rem;
+	color: $mainGreen;
+	border-bottom: 9px solid $mainBrown;
+}
+
+
+
+
+
+
+
+
+.h2 {
+
+	&__section-headline {
+		font-size: 1.8rem;
+
+
+		@mixin atLaptop {
+
+		}
+
+	}
+
+}
+
+
+
+h3 {
+	font-family: 'Bitter', serif;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 2.0rem;
+	letter-spacing: 0.0rem;
+	color: $mainBrown;
+	border-left: 5px solid $mainGreen;
+	margin: 0;
+	margin-top: 3.0rem;
+	margin-bottom: 0.5rem;
+	padding-left: 0.5rem;
+}
+
+
+.h3 {
+
+	&__heading {
+		font-size: 1.4rem;
+		font-weight: 700;
+		line-height: 1.6rem;
+		letter-spacing: 0.1rem;
+		margin: 0;
+		padding-top: 1.0rem;
+		padding-bottom: 2.0rem;
+	}
+
+}
+
+
+
+
+
+/* --- Highlighted Text --- */
+
+
+.text--underlined {
+	text-decoration: underline;
+}
+
+
+.text--heavy {
+	font-weight: 800;
+}
+
+
+.letter-colored--green {
+	color: $mainGreen;
+}
+
+
+.additional-info {
+	font-weight: 300;
+}
+
+
+
+
+/* --- Article Styles --- */
+
+article {
+	padding-left: 18px;
+	padding-right: 18px;
+
+	@mixin atLaptop {
+
+
+	}
+
+}
+
+article p {
+	position: relative;
+	line-height: 2.4rem;
+}
+
+
+/* --- Cite Styles --- */
+
+
+
+/* --- List Styles --- */
+ul {
+	list-style-type: square;
+}
+
+
+

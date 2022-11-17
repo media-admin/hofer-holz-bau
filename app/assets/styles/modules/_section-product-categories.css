@@ -1,0 +1,58 @@
+.section-product-categories {
+
+}
+
+.section-product-categories__title {
+
+}
+
+.section-product-categories__container {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: flex-start;
+	flex: 3;
+}
+
+.section-product-categories__card {
+	width: 32%;
+}
+
+.section-product-categories__card-container {
+
+}
+
+.section-product-categories__card-thumbnail {
+	max-width: 100% !important;
+	min-height: 440px !important;
+	width: 100% !important;
+	height: auto;
+	object-fit: cover;
+}
+
+.section-product-categories__card-content {
+	font-family: 'Kanit', sans-serif !important;
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 1.875rem;
+}
+
+.section-product-categories__card-content p {
+
+}
+
+
+.section-product-categories__card-title {
+	font-family: 'Bitter', serif;
+	font-size: 1.75rem;
+	font-weight: 500;
+	line-height: 2.0rem;
+}
+
+.section-product-categories__card-btn {
+
+}

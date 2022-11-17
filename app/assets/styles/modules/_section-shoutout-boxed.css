@@ -1,0 +1,53 @@
+.section-shoutout-boxed {
+	position: relative;
+	display: block;
+	width: 100%;
+	min-height: 600px;
+	height: auto;
+	background-image: url('../images/sections/Wood-shavings.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right bottom;
+	overflow: hidden;
+	margin-bottom: -4.0rem;
+
+
+	&__container {
+		vertical-align: middle;
+	}
+
+	&__article {
+		position: relative;
+		display: block;
+		width: 55%;
+		background-color: $lightGreen;
+		border-left: 8px solid $mainBrown;
+		margin-top:  10.0rem;
+		margin-left: 2.0rem;
+	}
+
+
+	&__content {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		font-family: 'Kanit', sans-serif;
+		font-size: 1.25rem;
+		font-weight: 300 ;
+		line-height: 1.5rem;
+		padding-left: 1.0rem;
+		padding-right: 1.0rem;
+	}
+
+
+	&__content .text--strong {
+		position: relative;
+		display: block;
+		font-family: 'Bitter', serif;
+		font-size: 2.5rem;
+		font-weight: 600 ;
+		line-height: 3.0rem;
+		color: $mainBrown;
+	}
+
+}

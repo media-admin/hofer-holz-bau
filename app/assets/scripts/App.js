@@ -6,12 +6,12 @@ import "jquery"
 import "lazysizes"
 import "slick-slider"
 
-import StickyHeader from "./modules/StickyHeader"
+// import StickyHeader from "./modules/StickyHeader"
 import BackToTop from "./modules/BackToTop"
 import Dywc from "./modules/Dywc"
 import CoockieNotice from "./modules/CoockieNotice"
 
-let stickyHeader = new StickyHeader()
+// let stickyHeader = new StickyHeader()
 let backToTop = new BackToTop()
 let dywc = new Dywc()
 let cookieNotice = new CockieNotice()

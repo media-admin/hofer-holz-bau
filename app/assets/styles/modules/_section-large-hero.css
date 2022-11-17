@@ -1,0 +1,92 @@
+.section-large-hero {
+	position: relative;
+	width: 100%+36px;
+	min-height: 320px;
+	height: auto;
+	vertical-align: middle;
+	background-image: url('../images/header/header_background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	margin-right: -18px !important;
+	margin-left: -18px !important;
+
+
+	&__title {
+		text-shadow: 2px 2px 2px $mainGrey;
+		letter-spacing: 0.15rem;
+		margin: auto 2.5rem !important;
+		margin-top: 3.5rem !important;
+	}
+
+	@mixin atMobile {
+		font-size: 4.8rem;
+	}
+
+
+	&__content {
+		text-indent: -9999999px;
+	}
+
+	@mixin atMobile {
+		font-size: 4.8rem;
+	}
+
+}
+
+
+.home .section-large-hero {
+	position: relative;
+	width: 100%+36px;
+	min-height: 640px;
+	height: auto;
+	vertical-align: middle;
+	background-image: url('../images/header/header-home_background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	margin-right: -18px !important;
+	margin-left: -18px !important;
+}
+
+
+.home .section-large-hero__title {
+	text-indent: -9999999px;
+}
+
+@mixin atMobile {
+	font-size: 4.8rem;
+}
+
+
+.home .section-large-hero__content {
+	width: 70%;
+	text-indent: inherit;
+	padding-right: 20%;
+	margin-left: 35%;
+	margin-bottom: 2.0rem;
+}
+
+
+.home .section-large-hero__text {
+	font-family: 'Bitter', serif;
+	font-weight: 900;
+	font-size: 3.4rem;
+	line-height: 4.8rem;
+	color: white;
+	text-shadow: 2px 2px 2px $mainGrey;
+	letter-spacing: 0.15rem;
+	margin: auto 2.5rem !important;
+}
+
+@mixin atMobile {
+	font-size: 4.8rem;
+}
+
+
+.home .section-large-hero__btn {
+	margin-top: 2.0rem !important;
+	margin-left: 20%;
+}
