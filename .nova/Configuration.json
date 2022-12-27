@@ -1,4 +1,7 @@
 {
   "workspace.color" : 0,
-  "workspace.name" : "hoferholzbau.at"
+  "workspace.name" : "hoferholzbau.at",
+  "workspace.preview_root" : "..\/..\/Valet-Umgebung\/hoferholzbau",
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "http:\/\/localhost:3000"
 }

@@ -4,7 +4,7 @@
     "cms\/wp-content\/uploads\/backwpup-19accc-backups",
     "cms\/wp-content\/uploads\/backwpup-19accc-logs"
   ],
-  "localPath" : "..\/..\/Valet-Umgebung\/hoferholzbau",
+  "localPath" : "cms",
   "remotePath" : "\/public_html\/cms",
   "remoteURL" : "https:\/\/www.hoferholzbau.at",
   "server" : "Hofer-Holz-Bau",
