@@ -1,0 +1,11 @@
+{
+  "identifier" : "39C37B5D-5FB3-477E-9BC0-AD7D5FE0527D",
+  "ignoredFilePatterns" : [
+    "cms\/wp-content\/uploads\/backwpup-19accc-backups",
+    "cms\/wp-content\/uploads\/backwpup-19accc-logs"
+  ],
+  "remotePath" : "\/public_html\/cms",
+  "remoteURL" : "https:\/\/www.hoferholzbau.at",
+  "server" : "Hofer-Holz-Bau",
+  "usesPublishing" : true
+}
